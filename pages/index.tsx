@@ -1,11 +1,12 @@
 import type { NextPage } from 'next'
 import axios from 'axios'
+import {video } from '../types'
 
-// interface IProps {
-//   videos:
-// }
+interface IProps {
+  videos: Video[]
+}
 
-const Home: NextPage = ({ videos }) => {
+const Home = ({ videos }: IProps) => {
   return (
     <div className='text-3xl font-bold underline'>
       VIVID
